@@ -345,8 +345,8 @@ def lambda_handler(event, context):
     # 엑셀 파일을 S3에 업로드 또는 다른 작업 수행
     # 예를 들어, S3에 업로드한다면:
     s3_client = boto3.client('s3')
-    s3_bucket_name = 'test-excel-store'
-    s3_key = 'ec2_s3_list.xlsx'
+    s3_bucket_name = 'YOUR-BUCKET-NAME'
+    s3_key = 'EXCEL-FILE-NAME.xlsx'
     s3_client.upload_file(file_path, s3_bucket_name, s3_key)
 
     return {
