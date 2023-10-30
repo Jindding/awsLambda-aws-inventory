@@ -21,8 +21,6 @@ Before you can use this Lambda function, you need to configure it with your AWS 
 - Ensure that you have the necessary IAM permissions for accessing the AWS resources you want to include in the inventory.
 
 ### Configuration Steps
-1. **Access Key and Secret Key**: Replace the placeholders in the code with your AWS Access Key and Secret Key. It's recommended to use IAM roles and avoid hardcoding credentials for better security.
+1. **Region**: Set the `region` variable to your desired AWS region.
 
-2. **Region**: Set the `region` variable to your desired AWS region.
-
-3. **S3 Bucket Configuration**: Specify the S3 bucket name and key where you want to store the Excel file. Modify the `s3_bucket_name` and `s3_key` variables accordingly.
+2. **S3 Bucket Configuration**: Specify the S3 bucket name and key where you want to store the Excel file. Modify the `s3_bucket_name` and `s3_key` variables accordingly.
